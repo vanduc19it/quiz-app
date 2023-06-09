@@ -19,7 +19,7 @@ const Question = ({ quiz, onSelectAnswer }) => {
 
 
   return (
-    <div className='question'>
+    <div className='question1'>
     <h2>{quiz?.question}</h2>
     {allAnswers.map((option) => (
       <div key={option} className='answer' >

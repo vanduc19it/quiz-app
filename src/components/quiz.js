@@ -113,7 +113,8 @@ const Quiz = () => {
     {
       quiz.length !=0 ? (
         <div className='question'>
-        <h2>{`Question ${currentQuestionIndex + 1}/${quiz.length}`}</h2>
+        
+        <h1 className='head'>{`Question ${currentQuestionIndex + 1}/${quiz.length}`}</h1>
         <Question
                 quiz={quiz[currentQuestionIndex]}
                 onSelectAnswer={handleAnswerSelect}
