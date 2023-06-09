@@ -1,0 +1,31 @@
+.question,.spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.btn {
+    background-color: rgb(255, 50, 50);
+    color: white;
+    border-radius: 16px;
+    border: none;
+    height: 36px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.img_modal {
+    width: 100px;
+    height: 100px;
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

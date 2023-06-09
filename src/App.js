@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Quiz from './components/quiz';
 
 function App() {
+  const [start, setStart] = useState(false);
+
+  const handleStart = () => {
+    setStart(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+
+      {!start ? (
+        <div className='container'>
+          <img src="/answer.png" alt="quiz_logo" className='logo' />
+          <button onClick={handleStart} className='btn-start'>Start Quiz!</button>
+        </div>
+      ) : (
+        <Quiz />
+      )}
+
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.answer {
+    border: 2px solid white;
+    padding: 18px;
+    margin: 20px 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.answer input[type="radio"] {
+    margin-right: 5px;
+    width: 15px; 
+    height: 15px;
+    cursor: pointer;
+    border-color: red;
+    background-color: red;
+  }
+.question {
+    margin: 20px;
+}
